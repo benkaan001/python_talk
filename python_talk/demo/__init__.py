@@ -1,5 +1,0 @@
-print('Gotta love Python!')
-
-
-
-
