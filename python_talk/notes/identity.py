@@ -3,8 +3,6 @@
 # immutablity of the object plays a key role
 
 
-
-
 # IMMUTABLE
 
 a = 10
@@ -37,4 +35,6 @@ print(list1 == list2) # True
 list4 = [(9+1)]
 
 print(list4[0] is a) # True 
+
+
 

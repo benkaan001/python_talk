@@ -8,6 +8,10 @@ if l:
 else:
     print(False)
     
+    
+str = 'bed and breakfast'
+output = str.find('bed') == False  # True 
+
 """
     Boolean Conversion 
     
