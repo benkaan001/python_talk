@@ -19,5 +19,21 @@ has_list = [1,2] in [1,2,3] # False
 
 
 
+# EXAMPLE
+
+# notice that pyhon is assigned to a list containing a string 'cool'. 
+# result is checking if python contains another list inside that has a string 'cool' 
+
+python = ['cool']
+print(python) # ['cool']
+result = python in python
+print(result) # False
+true_result = python in [python] # True
+
+scala = ['not as cool']
+nested_scala = [['not as cool']]
+result = scala in nested_scala
+print(result) # True
+
 
  
