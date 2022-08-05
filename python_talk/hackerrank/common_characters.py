@@ -20,3 +20,7 @@ common = [x for x in set(s1)&set(s2)]
 
 # ['t', ' ', 's', 'i', 'e', 'a', 'l'] 
 
+
+# list comprehension
+
+common_comprehensive = [x for x in set(s1) if x in set(s2)]
