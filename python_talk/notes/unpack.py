@@ -21,3 +21,5 @@ apple, banana, *etc, durian = calories
 print(durian) # 500
 print(etc) # [300,400]
 
+
+
