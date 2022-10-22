@@ -9,6 +9,7 @@ they will not be visible for immutable objects
 def place_order(cargo_weight, free_shipping):
     
     free_shipping = True if cargo_weight > 10 else False 
+    print(f"Free shipping inside the function: {free_shipping}") # True
     
 free_shipping = False 
 print(f"Free shipping status before placing the order order: {free_shipping}") # False
@@ -17,7 +18,7 @@ place_order(20, free_shipping)
 print(f"Free shipping status after processing an eligible order: {free_shipping}") # False
 
 
-
+#################################################################
 
 def checkout_cart(shopping_cart):
     """ puts a free gift for shoppers who spend $100 or more """
@@ -28,5 +29,17 @@ def checkout_cart(shopping_cart):
 
 cart = [50,50,50]
 print(f"Shopping cart prior to checkout: {cart} ") # [50,50,50]
+
 checkout_cart(cart)
 print(f"Shopping cart after checkout: {cart}") # [50,50,50,"free gift"]
+
+
+"""
+Free shipping status before placing the order order: False
+Free shipping status after processing an eligible order: False
+Free shipping inside the function: True
+Shopping cart prior to checkout: [50, 50, 50] 
+Shopping cart after checkout: [50, 50, 50, 'free gift']
+
+
+"""
