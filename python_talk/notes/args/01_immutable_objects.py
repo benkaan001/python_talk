@@ -1,5 +1,6 @@
 # In python all arguments are passed by REFERENCE
-# At the time of function invokation both formal and actual arguments point to the same object
+# For immutable objects both the formal and actual arguments point to the same object
+# BEFORE teh function is invoked
 
 
 def double_number(formal_num):
