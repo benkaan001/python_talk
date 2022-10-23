@@ -22,4 +22,45 @@ print(durian) # 500
 print(etc) # [300,400]
 
 
+#        FUNCTION RETURN VALUE UNPACKING
+# Refer to scope/pass_by_assignment
 
+# the function returns multiple values
+def greet(name, counter):
+    return f"Hi, {name}!", counter+1
+
+# the issue is that since the greet function returns multiple values
+# we get a tuple
+def main():
+    counter = 0
+    print(greet("Irma", counter))
+    print(f"Counter is {counter}")
+    print(greet("Veda", counter))
+    print(f"Counter is {counter}")
+
+main()
+"""
+('Hi, Irma!', 1)
+Counter is 0
+('Hi, Veda!', 1)
+Counter is 0
+"""
+
+# to fix this issue, we can reassign the counter variable with each call to greet()
+def main2():
+    counter = 0
+    greeting, counter = greet("Irma", counter)
+    print(f"{greeting}\nCounter is {counter}")
+    greeting, counter = greet("Veda", counter)
+    print(f"{greeting}\nCounter is {counter}")
+    
+main2()
+
+"""
+Hi, Irma!
+Counter is 1
+Hi, Veda!
+Counter is 2
+
+
+"""
