@@ -3,6 +3,7 @@
     
     Nevertheless, excluding the Exception class inside the except block 
     before any other specific except block will result in a syntax error.
+    
 '''
 def calculate_calories(calorie_list):
     
@@ -24,10 +25,35 @@ calculate_calories([100,90,30, "40", 100])
 # Handled in Exception Block: unsupported operand type(s) for +=: 'int' and 'str'
 
 
+###############################################################################################
+
+def calculate_calories2(calorie_list):
+    
+    cal_sum = 0
+    
+    try:
+        for calorie in calorie_list:
+            cal_sum += calorie 
+    
+        return cal_sum
+ 
+    except ZeroDivisionError as e:
+        print(f"Handled in ZeroDivisionError Block: {e}")
+    
+    except ValueError as e:
+        print(f"Handled in ValueError Block: {e}")
+    
+    # Since the TypeError block is missing, it will be handled by default
+    except:
+        print("Handled in default except block.")
+    
+calculate_calories2([100,90,30, "40", 100]) 
+
+# Handled in default except block.
 
 #####################################################################################
 
-def calculate_calories2(calorie_list):
+def calculate_calories3(calorie_list):
     
     cal_sum = 0
     
@@ -39,9 +65,10 @@ def calculate_calories2(calorie_list):
 
     except:
         print("Plain except block.") 
+        
     except TypeError as e:
         print(f"Handled in TypeError Block: {e}")
     
-calculate_calories2([100,90,30, "40", 100]) 
+calculate_calories3([100,90,30, "40", 100]) 
 
 # SyntaxError: default 'except:' must be last
