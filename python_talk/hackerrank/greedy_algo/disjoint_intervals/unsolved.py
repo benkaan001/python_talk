@@ -18,6 +18,7 @@ Output:
 [5, 7]  
 '''
 def disjoint_interval(arr):
+    pass
     
   
     
