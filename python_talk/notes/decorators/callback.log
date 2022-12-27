@@ -1,0 +1,4 @@
+INFO:root:Executed with args: ('Tom', 'Jerry'), {}
+INFO:root:Executed with args: ('Hansel', 'Gretel'), {}
+INFO:root:Executed with args: ('TOM', 'JERRY'), {}
+INFO:root:Executed with args: ('TOM1', 'JERRY1'), {}
