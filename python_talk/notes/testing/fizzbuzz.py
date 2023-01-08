@@ -13,3 +13,6 @@ expected = "FizzBuzz"
 result = fizzBuzz(15)
 assert (type(result) == str), f"Expected actual to be of string type, but found {type(result)}"
 assert result == expected, f"Expected {expected}, but found {result} "
+
+if __name__ == "__main__":
+    fizzBuzz()
